@@ -1,6 +1,4 @@
-import java.io.{InputStream, PrintStream}
-import java.net.ServerSocket
-import org.apache.spark.sql.SparkSession
+import org.apache.spark.sql.{DataFrame, SparkSession}
 import org.apache.spark.sql.types._
 import org.apache.spark.sql.functions._
 
@@ -37,47 +35,23 @@ object Main {
       .withColumn("json_data", from_json($"value", jsonSchema))
       .select("json_data.*")
 
-    ///////////////////////////////////
-    // Write aggregation code
-    ///////////////////////////////////
-
-
-
-
-
-
-    ///////////////////////////////////
+    // Process events
+    val outputDf = processEvents(inputDf)
 
     // Write output to console
-    val query = inputDf.writeStream
+    val query = outputDf.writeStream
       .outputMode("append")
       .format("console")
       .start()
 
     query.awaitTermination()
   }
-}
 
-class EventsEmitterServer extends Thread {
-  override def run() {
-    println("Events emitter server thread started")
+  def processEvents(inputDf: DataFrame): DataFrame = {
+    //
+    // Write events aggregation code in this method
+    //
 
-    val stream: InputStream = getClass.getResourceAsStream("/events.jsonl")
-    val lines = scala.io.Source.fromInputStream(stream).getLines
-
-    val server = new ServerSocket(9999)
-
-    while (true) {
-      val s = server.accept()
-      val out = new PrintStream(s.getOutputStream)
-
-      lines.foreach { line =>
-        out.println(line.trim)
-        Thread.sleep(1000)
-        out.flush()
-      }
-
-      s.close()
-    }
+    inputDf
   }
 }
