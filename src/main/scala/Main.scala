@@ -19,7 +19,7 @@ object Main {
     // Json schema
     val jsonSchema = new StructType()
       .add("user_id", StringType)
-      .add("timestamp", TimestampType)
+      .add("timestamp", LongType)
       .add("type", StringType)
       .add("btc", DecimalType(20, 10))
       .add("payment_method", StringType)
