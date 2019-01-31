@@ -1,7 +1,7 @@
 import java.io.{InputStream, PrintStream}
 import java.net.ServerSocket
 
-class EventsEmitterServer extends Thread {
+class EventsEmitterServerScala extends Thread {
   override def run() {
     println("Events emitter server thread started")
 

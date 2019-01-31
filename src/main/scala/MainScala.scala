@@ -2,11 +2,11 @@ import org.apache.spark.sql.{DataFrame, SparkSession}
 import org.apache.spark.sql.types._
 import org.apache.spark.sql.functions._
 
-object Main {
+object MainScala {
   def main(args: Array[String]): Unit = {
 
     // Start events emitter server in a separate thread
-    new EventsEmitterServer().start()
+    new EventsEmitterServerScala().start()
 
     // Spark session
     val spark = SparkSession.builder
