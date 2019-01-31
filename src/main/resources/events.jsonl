@@ -1,0 +1,17 @@
+{"user_id":"1","timestamp":1536987178,"type":"buy","btc":0.23,"usd":7256.52,"payment_method":"ach"}
+{"user_id":"1","timestamp":1537095561,"type":"buy","btc":1.52,"usd":7256.52,"payment_method":"cc"}
+{"user_id":"1","timestamp":1537121938,"type":"sell","btc":1.23,"usd":7256.52,"payment_method":"ach"}
+{"user_id":"2","timestamp":1537229927,"type":"buy","btc":0.03,"usd":7256.52,"payment_method":"cc"}
+{"user_id":"1","timestamp":1537242677,"type":"sell","btc":0.01,"usd":7256.52,"payment_method":"cc"}
+{"user_id":"1","timestamp":1537244060,"type":"buy","btc":2.7,"usd":7256.52,"payment_method":"ach"}
+{"user_id":"1","timestamp":1537275458,"type":"buy","btc":1.23,"usd":7256.52,"payment_method":"ach"}
+{"user_id":"1","timestamp":1537299582,"type":"sell","btc":0.9,"usd":7256.52,"payment_method":"ach"}
+{"user_id":"2","timestamp":1537424460,"type":"buy","btc":1.8,"usd":7256.52,"payment_method":"cc"}
+{"user_id":"2","timestamp":1537441605,"type":"buy","btc":1.23,"usd":7256.52,"payment_method":"ach"}
+{"user_id":"2","timestamp":1537491412,"type":"buy","btc":1.23,"usd":7256.52,"payment_method":"ach"}
+{"user_id":"2","timestamp":1537529720,"type":"buy","btc":1.23,"usd":7256.52,"payment_method":"ach"}
+{"user_id":"1","timestamp":1537598813,"type":"buy","btc":1.23,"usd":7256.52,"payment_method":"ach"}
+{"user_id":"2","timestamp":1537620168,"type":"buy","btc":1.23,"usd":7256.52,"payment_method":"ach"}
+{"user_id":"2","timestamp":1537681809,"type":"buy","btc":1.23,"usd":7256.52,"payment_method":"cc"}
+{"user_id":"1","timestamp":1537683845,"type":"buy","btc":1.23,"usd":7256.52,"payment_method":"ach"}
+{"user_id":"1","timestamp":1537772265,"type":"buy","btc":1.23,"usd":7256.52,"payment_method":"ach"}
